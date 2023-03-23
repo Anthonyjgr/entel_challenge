@@ -1,0 +1,328 @@
+body {
+  font-family: "Barlow", sans-serif;
+  margin: 0;
+  height: auto;
+}
+.navBar {
+  display: flex;
+  width: 100vw;
+  height: 100px;
+  background: #002eff;
+}
+
+.navDiv {
+  display: flex;
+  height: 100px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+.titulo {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  color: #191919;
+}
+
+.parrafo {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.logo {
+  width: 80px;
+  height: 50px;
+}
+
+.logo img{
+  margin-right: -4px;
+}
+.navBar ul {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+.navBar a {
+  color: white;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.link:active {
+  text-decoration: underline;
+}
+
+.container {
+  margin-top: 8vh;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+h2 {
+  color: #002eff;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.vendedorContainer {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 15%;
+}
+
+.nombres {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+  margin-right: 5%;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+}
+.nombres input {
+  box-sizing: border-box;
+  height: 45px;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #999999;
+}
+.label {
+  margin-bottom: 10px;
+  color: #191919;
+}
+
+.rut {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.rut input {
+  box-sizing: border-box;
+  height: 45px;
+  width: 100%;
+  border: 1px solid #999999;
+  border-radius: 8px;
+}
+
+.vehiculoContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  justify-content: space-between;
+}
+.box2 {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin-bottom: 30px;
+}
+
+.vehiculosSelect {
+  height: 45px;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #999999;
+  appearance: none;
+  background: url("./assets/Union.svg") no-repeat center right 7px;
+  padding-right: 50px;
+  padding: 10px;
+}
+
+.box2 input {
+  box-sizing: border-box;
+  height: 45px;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #999999;
+}
+
+.btnContainer {
+  width: 100%;
+  position: relative;
+  margin-bottom: 120px;
+}
+
+.btn {
+  position: absolute;
+  right: 0;
+  margin-top: 30px;
+  border: none;
+  width: 255px;
+  height: 45px;
+  border-radius: 99px;
+  background: #ff3d00;
+  color: white;
+  font-size: medium;
+}
+
+.btn:hover {
+  background: #fc6335;
+  cursor: pointer;
+}
+
+.vehiculosSelect:hover {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 375px) and (max-width: 912px) {
+  .container {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+  .navBar {
+    height: 60px;
+  }
+
+  .navDiv {
+    height: 60px;
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+  .navBar ul a{
+    margin-right: 0px;
+  }
+  .logo {
+    width: 50px;
+    height: 30px;
+    margin-left: 0px;
+  }
+  .logo img {
+    width: auto;
+    height: 30px;
+    margin-right: -4px;
+  }
+  .titulo {
+    font-size: 24px;
+  }
+  .parrafo {
+    font-size: 18px;
+  }
+  .vendedorContainer {
+    flex-direction: column;
+  }
+  .vendedorContainer input {
+    width: 90vw;
+    margin-bottom: 15px;
+  }
+  .vehiculoContainer {
+    flex-direction: column;
+  }
+  .vehiculoContainer input {
+    width: 90vw;
+    margin-bottom: 15px;
+  }
+  .vehiculosSelect {
+    width: 90vw;
+  }
+  .label {
+    width: 200px;
+  }
+  .btnContainer {
+    width: 100%;
+    position: initial;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0px;
+  }
+  .btn {
+    position: initial;
+    margin-bottom: 50px;
+    width: 90vw;
+    max-width: 375px;
+  }
+  .divisor {
+    width: 90vw;
+  }
+}
+
+@media screen and (min-width: 280px) and (max-width: 375px) {
+  .container {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+  .navBar {
+    height: 60px;
+  }
+
+  .navDiv{
+    height: 60px;
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+  .logo {
+    width: 50px;
+    height: 25px;
+    margin-left: 0px;
+  }
+
+  .navBar ul{
+    padding: 0;
+  }
+  .navBar ul a{
+    font-size: 12px;
+  }
+  .logo img {
+    width: auto;
+    height: 25px;
+    margin-right: -4px;
+  }
+  .titulo {
+    font-size: 24px;
+  }
+  .parrafo {
+    font-size: 18px;
+  }
+  .vendedorContainer {
+    flex-direction: column;
+  }
+  .vendedorContainer input {
+    width: 90vw;
+    margin-bottom: 15px;
+  }
+  .vehiculoContainer {
+    flex-direction: column;
+  }
+  .vehiculoContainer input {
+    width: 90vw;
+    margin-bottom: 15px;
+  }
+  .vehiculosSelect {
+    width: 90vw;
+  }
+  .label {
+    width: 200px;
+  }
+  .btnContainer {
+    width: 100%;
+    position: initial;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0px;
+  }
+  .btn {
+    position: initial;
+    margin-bottom: 50px;
+    width: 90vw;
+  }
+  .divisor {
+    width: 90vw;
+  }
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="./style.css" rel="stylesheet" type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800&family=Days+One&family=Open+Sans:wght@400;600&family=Playfair+Display:wght@400;600&family=Poppins:wght@100;200;300;400&family=Solitreo&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="navBar">
+      <div class="navDiv">
+        <div class="logo">
+          <img src="./assets/eLogo.svg" alt="" />
+          <img src="./assets/orangeRigth.svg" alt="" />
+        </div>
+        <ul>
+          <a href="./index.html" class="link">Formulario</a>
+          <a href="./lista.html" class="link">Lista Formulario</a>
+        </ul>
+      </div>
+    </div>
+
+    <form class="container" id="formulario">
+      <h1 class="titulo">Nuevo Formulario</h1>
+      <p class="parrafo">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+        Ipsum has been the bed industry's standard dummy text ever since.
+      </p>
+      <h2>Datos del vendedor:</h2>
+      <div class="vendedorContainer">
+        <div class="nombres">
+          <label class="label">Nombre y apellido</label>
+          <input type="text" id="nombre" />
+        </div>
+
+        <div class="rut">
+          <label class="label">rut</label>
+          <input type="text" id="rut" />
+        </div>
+
+        <div class="Rut"></div>
+      </div>
+      <hr class="divisor" />
+
+      <!-- patente -->
+      <h2>Datos del vehículo:</h2>
+      <div class="vehiculoContainer">
+        <div class="box2">
+          <label class="label">Patente del vehículo</label>
+          <input type="text" id="patente" />
+        </div>
+        <!-- marca -->
+        <div class="box2">
+          <label class="label">Marca vehículo</label>
+          <select id="marca" class="vehiculosSelect">
+            <option value="" id=""></option>
+            <option value="suzuki">suzuki</option>
+            <option value="chevrolet">chevrolet</option>
+            <option value="ford">ford</option>
+          </select>
+        </div>
+        <!-- modelo -->
+        <div class="box2">
+          <label class="label">Modelo vehículo</label>
+          <select id="modelo" class="vehiculosSelect">
+            <option value="" id=""></option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+        </div>
+        <!-- color -->
+        <div class="box2">
+          <label class="label">Color vehículo</label>
+          <select id="color" class="vehiculosSelect">
+            <option value="" id=""></option>
+            <option value="blanco" id="">blanco</option>
+            <option value="gris">gris</option>
+            <option value="negro">negro</option>
+          </select>
+        </div>
+        <div class="Rut"></div>
+      </div>
+      <hr class="divisor" />
+      <div class="btnContainer">
+        <button class="btn" id="btnsubmit" type="submit">Enviar</button>
+      </div>
+    </form>
+    <script src="./index.js"></script>
+  </body>
+</html>
